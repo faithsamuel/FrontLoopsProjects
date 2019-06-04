@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Topography */
+body {
+    font-family: Roboto ;
+    font-size: 14px;
+    /* height: 100px; */
+
+}
+
+body {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.box {
+
+    width: 430px;
+    height: 470px;
+    background-color: #fff;
+    margin: 50px auto;
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dash {
+    width: 23px;
+    height: 3px;
+    background-color: rgb(70, 146, 233); 
+    margin-top: 90px;
+}
+
+.logo{
+    
+    /* padding: 20px 50px; */
+    margin: 50px 20px;
+    /* outline: 1px solid yellow; */
+}
+
+
+.logo-name {
+    text-transform: uppercase;
+    font-family: 'Prompt',sans-serif;
+     font-size: 62px; 
+     font-weight: 600;
+     line-height: 60px;
+     color: rgb(70, 146, 233);
+}
+
+.logo .desc {
+    text-transform: uppercase;
+    color: #ccc;
+
+}
+
+.logo .desc2 {
+    margin-left: 40px;
+    
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 300px;
+    margin-left: 35px;
+}
+
+.detail {
+    margin-left: 0 30px;
+}
+
+.detail-name{
+    color: #ccc;
+    font-weight: bolder;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+}
+
+.detail-desc {
+    text-transform: uppercase;
+}
+
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.other {
+    margin: 45px 0;
+    
+}
+
+.detail-value {
+    text-transform: capitalize;
+
+}
