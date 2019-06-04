@@ -35,7 +35,7 @@ body {
 .dash {
     width: 23px;
     height: 3px;
-    background-color: rgb(70, 146, 233); 
+    background-color: rgba(119, 187, 214,0.4); 
     margin-top: 90px;
 }
 
