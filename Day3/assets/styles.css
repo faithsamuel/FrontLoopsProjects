@@ -28,7 +28,7 @@ body {
 .box {
     background: #fff ;
     width: 500px;
-    height: 400px;
+    height: 360px;
     margin: 70px auto;
     border-radius: 4px;
     
@@ -41,7 +41,7 @@ body {
     
         content: '';
         position: absolute;
-        top:250px;
+        top:210px;
         width: 500px;
         height: 220px;
         background-image: url(img/bicycle.png);
@@ -88,7 +88,7 @@ h3 {
     font-weight: bolder;
 }
  h5 {
-     color:rgb(150, 147, 147);
+     color:rgb(112, 110, 110);
  }
 
 .price {
@@ -97,12 +97,12 @@ h3 {
  .upper {
      text-transform: uppercase;
      font-weight: bold;
-     color: rgb(117, 117, 117);
+     color: rgb(51, 50, 50);
  }
 .desc {
     margin:10px 35px;
     font-size: 13px;
-    color: #ccc;
+    color: rgb(163, 159, 159);
 
 }
 
