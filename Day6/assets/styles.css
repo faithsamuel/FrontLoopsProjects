@@ -9,13 +9,13 @@ body {
 }
 
 .container {
-    font-family: Roboto sans-serif;
+    font-family: 'Roboto', sans-serif;
    
 }
 
 .box{
     width:1000px;
-    height: 450px;
+    height: 500px;
     background-color: #fff;
     border-radius: 4px;
     margin: 40px auto;
@@ -42,13 +42,13 @@ body {
 }
 
 .heading-text{
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 
 .heading-paragraph {
     color: rgb(151, 148, 148);
-    font-weight: bolder;
+    /* font-weight: bolder; */
 }
 
 .social-tabs {
@@ -64,16 +64,15 @@ body {
     align-items: center;
     text-transform: uppercase;
     padding-left: 20px;
-}
-
-.social:hover {
-    box-shadow: 1px 1px 1px 1px rgba(14,21,47, .2);
+    outline: 1px dotted rgb(233, 230, 230);
+    color: rgb(124, 123, 123);
 }
 
 .social-text {
-    margin-left: 50px;
+    margin-left: 180px;
     font-weight: bolder;
-    color: rgb(107, 105, 105);
+    
+    
 }
 
 .social-text span {
@@ -83,18 +82,30 @@ body {
 
 }
 
+
+.social:hover {
+    box-shadow: 1px 1px 1px 1px rgba(14,21,47, .2);
+    color: #000;
+    
+    
+}
+
+
+
 aside {
     height: 450px;
     width:350px;
 }
 
 .img-right {
-    height: 450px;
+    height: 500px;
     width:350px;
 }
 
 footer {
     display: flex;
+    margin-top: 70px;
+    
 }
 .footer-text {
     margin-left: 50px;
