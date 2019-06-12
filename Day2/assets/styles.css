@@ -53,7 +53,7 @@ body {
 .pay{
     display: flex;
     text-decoration: none;
-    widows: 33.33%;
+    /* widows: 33.33%; */
     padding: 20px;
     margin-right: 10px;
     flex: 1;

@@ -1,0 +1,195 @@
+@import url("input.css");
+@import url("btn.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    height: 100vh;
+}
+
+
+nav{
+    /* outline: 1px solid red; */
+    margin: 10px  250px;
+    display: flex;
+    align-items: center;
+    margin-bottom:40px;
+}
+
+nav .links{
+    margin-left:auto;
+    display: flex;
+    justify-content: space-between;
+    width:450px;
+
+}
+
+.link-item {
+    text-decoration: none;
+    font-size: 16px;
+    color:rgb(126, 124, 124);
+}
+
+.display{
+   
+    height: 240px;
+    width:350px;
+    margin: 100px 80px;
+
+}
+
+.note{
+    margin-top:30px;
+    margin-bottom: 50px;
+    padding-left: 15px;
+    border-left: 2px solid #ccc;
+
+}
+
+.top{
+    /* outline: 1px solid red; */
+    height: 500px;
+}
+
+.top:after {
+    /* outline: 1px solid red; */
+    content: '';
+    position: absolute;
+    top:100px;
+    right:1px;
+    width: 300px;
+    height: 410px;
+    background-image: url(../img/watches.jpg);
+    /* background-repeat: no-repeat; */
+    background-size:570px;
+    /* mix-blend-mode:multiply; */
+    
+}
+
+
+.watch-details {
+    /* outline: 1px solid red; */
+    display: flex;
+    margin: 60px 80px
+}
+
+.detail {
+    padding: 20px;
+}
+
+.title {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.dott {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid red; */
+    
+    
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color:#ccc;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* display: inline-block; */
+   
+  }
+
+
+  .dash {
+    width: 35px;
+    height: 3px;
+    background-color: red; 
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.learn{
+    margin-top: 15px;
+    text-decoration: none;
+    color: red;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center
+}
+
+.dash:hover{
+    width: 65px;
+    height: 3px;
+    /* background-color: red; 
+    display: inline-block;
+    margin-right: 10px; */
+}
+
+.watch-details-2 {
+    display: flex;
+   outline: 1px solid red;
+    height: 400px;
+    margin: 10px 80px;
+    flex:9999;
+    /* margin-bottom: 50px; */
+
+}
+.left {
+    flex:3;
+    padding:  60px 60px 60px 0;
+}
+
+.right{
+    height: 400px;
+    flex:2;
+    
+}
+
+.preview{
+    height: 400px;
+    width: 310px;
+}
+
+.text{
+   margin: 40px 0;
+   border-left: 2px solid #ccc;
+   padding-left: 15px;
+}
+
+.bottom {
+    outline: 1px solid red;
+    height:400px;
+    background-image: url("../img/runners.jpg");
+    background-size: 100% 100%;
+}
+
+.main{
+    outline: 1px solid red;
+}
+.bottom{
+    display:flex;
+}
+.health {
+    color:#fff;
+    outline: 1px solid red;
+    height: 300px;
+    width:300px;
+    margin-left:60%;
+    margin-top:50px;
+}
+
+.paragraph{
+    margin-bottom: 30px;
+}
+
+
