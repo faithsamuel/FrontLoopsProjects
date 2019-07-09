@@ -1,0 +1,203 @@
+//sass vars
+$default:0;
+$peach:rgb(243, 158, 158);
+$white: #fff;
+$white3:rgba($white,.85);
+$white2: rgba($white,.5);
+$black:#000;
+$black2:lighten($black, 20%);
+$black3:lighten($black, 15%);
+$black4:lighten($black, 10%);
+
+$colors : (
+    "yellow": yellow,
+    "red" : red,
+    "text": blue
+);
+
+@each $class, $color in $colors {
+ .debug-#{$class}{
+    border:1px solid #{$color};
+}
+}
+
+//arrow mixin
+@mixin arrows($width,$height,$color,$dir){
+    width: $width;
+    height:$height;
+    $color: $color;
+    
+    @if $dir == left{
+        border-top: $width solid transparent;
+        border-right: $width solid $color; 
+        border-bottom: $width solid transparent;
+    }
+
+    @else if $dir == right{
+        border-top: $width solid transparent;
+        border-left: $width solid $color; 
+        border-bottom: $width solid transparent;
+    }
+}
+
+//reset
+*,
+*:before,
+*:after {
+    padding:$default;
+    margin:$default;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto;
+    background: $peach;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    padding-top: 6rem;
+    padding-left: 12rem;
+    overflow-x:hidden; 
+}
+
+.white{
+    color:$white3 !important;
+}
+nav {
+    display: flex;
+    word-spacing: 1rem;
+    overflow-x: auto;
+    padding-right: 2rem;
+    &::-webkit-scrollbar{
+        width: 0px;
+        display: none;
+        background: transparent;
+
+    }
+
+    .nav-item {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 1rem;
+        color:$white2;
+        
+        &:first-of-type{
+            padding-left: 0;
+        }
+    }
+
+}
+
+
+
+.paragraph{
+    // margin-left:8rem;
+    color: $white3;
+    width: 70%;
+    margin-bottom: 2rem;    
+    
+}
+
+.content{
+    margin-top:2rem;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+
+    .arrow{
+        // box-shadow: 0px 0px 0px 20px rgba($white,.5);
+        background: rgba($white,.3);
+        display: flex;
+        padding: 2.3em;
+        justify-content: center;
+        align-items: center;
+
+        &:before {
+            content: '';
+            display: block;
+        }
+
+        &.left-arrow {
+            position: absolute;
+            left:-80px;
+        }
+    }
+}
+
+// arrow mixins
+.left-arrow:before{
+    @include arrows (5px,5px,$black2,left);
+}
+
+.right-arrow:before{
+    @include arrows (5px,5px,$black,right);   
+}
+
+.box{
+    display: flex;
+   
+    .content-item{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title{
+            margin-bottom: 5px;
+            color: $peach;
+        }
+
+        .description {
+            color:$white3;
+            font-weight: bold;
+        }
+
+       
+    }
+}
+
+.one{
+    background: $black2;
+}
+
+.two{
+    background: $black3;
+}
+
+.three{
+    background: $black4;
+}
+
+
+.start{
+    position: relative;
+    top: -1rem;
+    left: 8rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: $white;
+    padding: 7px 47px;
+    background: $black4;
+    transition: transform ease-in-out 500ms;
+
+    &:hover {
+        transform: translateY(-0.2rem);
+    }
+}
+
+
+    
+    
+
